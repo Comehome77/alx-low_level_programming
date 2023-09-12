@@ -12,7 +12,7 @@ int main(void)
 
 	while (a <= 8)
 	{
-		int b = x + 1;
+		int b = a + 1;
 
 		while (b <= 9)
 		{
