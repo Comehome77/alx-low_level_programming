@@ -12,9 +12,9 @@ int main(void)
 
 	while (a <= 8)
 	{
-		int b = 1;
+		int b = x + 1;
 
-		while (b <=9)
+		while (b <= 9)
 		{
 			putchar(a + '0');
 			putchar(b + '0');
