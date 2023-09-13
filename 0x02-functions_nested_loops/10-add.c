@@ -4,10 +4,10 @@
  * add - adds numbers
  * @x: parameter
  * @y: parameter
- * Return 0
+ * Return y + x
  */
 
-int add(int x,int y)
+int add(int x, int y)
 {
 	return (y + x);
 }
