@@ -18,9 +18,11 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (b = 0; s1[b] != '\0'; b++);
+	for (b = 0; s1[b] != '\0'; b++)
+		;
 
-	for (a = 0; s2[a] != '\0'; a++);
+	for (a = 0; s2[a] != '\0'; a++)
+		;
 
 	result = malloc(sizeof(char) * (a + b + 1));
 
