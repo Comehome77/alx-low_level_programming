@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int (*op)(int, int);
+	int (*opera)(int, int);
 	int a, b;
 
 	if (argc != 4)
@@ -19,11 +19,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	operator = get_op_func(argv[2]);
+	opera = get_op_func(argv[2]);
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	if (operator == NULL)
+	if (opera == NULL)
 	{
 		printf("Error\n");
 		exit(99);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", operator(a, b));
+	printf("%d\n", opera(a, b));
 
 	return (0);
 }
