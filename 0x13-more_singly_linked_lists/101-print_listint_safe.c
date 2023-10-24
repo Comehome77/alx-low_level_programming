@@ -32,10 +32,11 @@ void free_listp(listp_t **head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t c = 0;
-	listp_t *d = NULL;
+	listp_t *d;
 	listp_t	*new;
 	listp_t *add;
 
+	d = NULL;
 	while (head != NULL)
 	{
 		new = malloc(sizeof(listp_t));
