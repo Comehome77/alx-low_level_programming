@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * len - returns length of a string
+ * length - returns length of a string
  * @s: string
  * Return: length
  */
 
-int len(char *s)
+int length(char *s)
 {
 	if (*s != '\0')
 	{
@@ -16,13 +16,13 @@ int len(char *s)
 }
 
 /**
- * check - help
+ * checker - help
  * @s: string
  * @a: integer
  * Return: result
  */
 
-int check(char *s, int a)
+int checker(char *s, int a)
 {
 	if (a <= 0)
 	{
